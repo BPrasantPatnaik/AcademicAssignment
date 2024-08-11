@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #3EC1D3;
+    color: #F3F8FF;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets from list items */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center align the navigation items */
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+    margin: 0 15px; /* Horizontal margin between items */
+    padding: 10px 20px; /* Padding around the text for spacing */
+    background-color: #F6F7D7; /* Background color for items */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li:hover {
+    background-color: #FF9A00; /* Darker shade on hover */
+}
+
+/* Style the links within the list items */
+a {
+    color: #FF165D; /* Set text color to white */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    font-weight: bold;
+}
+
+a:hover {
+    color: #155263; /* Slightly lighter color on hover for visibility */
+}
+
+.course-details {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff; /* White background for visibility */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.instructor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #007BFF; /* Blue border around instructor details */
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9; /* Light grey background */
+}
+
+.instructor-photo {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.instructor h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.course-info {
+    display: flex;
+    flex-direction: column; /* Stack below each other */
+    margin: 10px 0; /* Spacing between course info sections */
+}
+
+.course-info p {
+    font-size: 1.1em;
+}
+
+.tabs {
+    margin-top: 20px;
+    border-bottom: 2px solid #007BFF;
+}
+
+.tab-button {
+    background-color: transparent;
+    color: #007BFF;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tab-button.active {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    margin-top: 10px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    background-color: #f9f9f9; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow for content boxes */
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #3EC1D3;
+    color: #F3F8FF;
+    font-size: 1.1em;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .course-details {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .instructor-photo {
+        width: 80px;
+    }
+
+    .instructor h2 {
+        font-size: 1.2em;
+    }
+}

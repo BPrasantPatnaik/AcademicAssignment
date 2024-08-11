@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block-Chain</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Block-Chain</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main class="course-details">
+        <div class="instructor">
+            <img src="images/srichandan_shobhanayak.jpg" alt="Srichandan Shobhanayak" class="instructor-photo">
+            <div>
+                <h2>Instructor: <a href="https://www.instructorwebsite.com" target="_blank">Srichandan Shobhanayak</a></h2>
+            </div>
+        </div>
+
+        <div class="course-info">
+            <p><strong>Credits:</strong> 3</p>
+            <p><strong>Theory/Lab:</strong> Theory</p>
+            <p><strong>Class Time:</strong> To be determined</p>
+            <p><strong>Classroom:</strong> To be determined</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'Objectives')">Course Objectives</button>
+            <button class="tab-button" onclick="openTab(event, 'Outcomes')">Course Outcomes</button>
+            <button class="tab-button" onclick="openTab(event, 'Modules')">Modules</button>
+            <button class="tab-button" onclick="openTab(event, 'Assignments')">Assignments</button>
+            <button class="tab-button" onclick="openTab(event, 'Materials')">Materials</button>
+            <button class="tab-button" onclick="openTab(event, 'Quizzes')">Quizzes</button>
+        </div>
+
+        <div id="Objectives" class="tab-content active">
+            <h3>Course Objectives</h3>
+            <p>Understand the principles of blockchain technology and its applications.</p>
+        </div>
+        <div id="Outcomes" class="tab-content">
+            <h3>Course Outcomes</h3>
+            <p>Students will be able to implement a simple blockchain.</p>
+        </div>
+        <div id="Modules" class="tab-content">
+            <h3>Modules</h3>
+            <ul>
+                <li>Blockchain Fundamentals</li>
+                <li>Cryptography</li>
+                <li>Smart Contracts</li>
+            </ul>
+        </div>
+        <div id="Assignments" class="tab-content">
+            <h3>Assignments</h3>
+            <p>Create a simple blockchain system.<br>Status: Not Started</p>
+        </div>
+        <div id="Materials" class="tab-content">
+            <h3>Course Materials</h3>
+            <p><a href="#" onclick="showModal('Lecture Notes')">Lecture Notes</a></p>
+            <p><a href="#" onclick="showModal('Recommended Readings')">Recommended Readings</a></p>
+        </div>
+        <div id="Quizzes" class="tab-content">
+            <h3>Quiz Questions</h3>
+            <ol>
+                <li>What is blockchain technology?</li>
+                <li>Explain the concept of smart contracts.</li>
+            </ol>
+        </div>
+
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <h2 id="modal-title"></h2>
+                <p>Additional resources or details will go here.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 7th Sem IT Courses. All rights reserved.</p>
+    </footer>
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>

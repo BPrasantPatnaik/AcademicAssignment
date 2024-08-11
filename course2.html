@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internet Web Technology</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Internet Web Technology</h1>
+      <nav>
+        <a href="index.html">Home</a>
+      </nav>
+    </header>
+
+    <main class="course-details">
+      <div class="instructor">
+        <img
+          src="images/bharti_mishra.jpg"
+          alt="Bharti Mishra"
+          class="instructor-photo"
+        />
+        <div>
+          <h2>
+            Instructor:
+            <a href="https://www.instructorwebsite.com" target="_blank"
+              >Bharti Mishra</a
+            >
+          </h2>
+        </div>
+      </div>
+
+      <div class="course-info">
+        <p><strong>Credits:</strong> 3</p>
+        <p><strong>Theory/Lab:</strong> Theory</p>
+        <p><strong>Class Time:</strong> To be determined</p>
+        <p><strong>Classroom:</strong> To be determined</p>
+      </div>
+
+      <div class="tabs">
+        <button
+          class="tab-button active"
+          onclick="openTab(event, 'Objectives')"
+        >
+          Course Objectives
+        </button>
+        <button class="tab-button" onclick="openTab(event, 'Outcomes')">
+          Course Outcomes
+        </button>
+        <button class="tab-button" onclick="openTab(event, 'Modules')">
+          Modules
+        </button>
+        <button class="tab-button" onclick="openTab(event, 'Assignments')">
+          Assignments
+        </button>
+        <button class="tab-button" onclick="openTab(event, 'Materials')">
+          Materials
+        </button>
+        <button class="tab-button" onclick="openTab(event, 'Quizzes')">
+          Quizzes
+        </button>
+      </div>
+
+      <div id="Objectives" class="tab-content active">
+        <h3>Course Objectives</h3>
+        <p>
+          Understanding the various concepts of HTML, CSS, XML, Java Script,
+          jQuery, JSON, React.js, Node.js
+        </p>
+        <p>
+          Understanding the various steps in designing a static and dynamic
+          website using client and server-side scripting.
+        </p>
+        <p>
+          Working on projects to gain practical knowledge about web development
+          along with teamwork.
+        </p>
+
+        <p>To understand the architecture of Web applications and services.</p>
+      </div>
+      <div id="Outcomes" class="tab-content">
+        <h3>Course Outcomes</h3>
+        <p>
+          Students will be able to design and develop dynamic web applications.
+        </p>
+        <p>
+          Explain the history of the internet and related internet concepts that
+          are vital in understanding web development.
+        </p>
+        <p>Analyze a web page and identify its elements and attributes</p>
+        <p>
+          Demonstrate the important HTML tags for designing static pages and
+          separate design from content using Cascading Style sheet.
+        </p>
+        <p>
+          Use web application development software tools i.e. Ajax, Java Beans
+          and XML, JQuery, JSON etc. and identify the environments currently
+          available on the market to design web sites.
+        </p>
+        <p>Utilize the concepts of JavaScript to build dynamic website.</p>
+        <p>Learn Server-side programming</p>
+        <p>Working on projects using web technologies.</p>
+      </div>
+      <div id="Modules" class="tab-content">
+        <h3>Modules</h3>
+
+        <ul>
+          <li class="module-title">
+            Module I [8 Hours]
+            <ul>
+              <li>
+                The Web
+                <ul class="sub-topic">
+                  <li>
+                    Internet, World Wide Web (WWW), History of the Internet,
+                    History of the Web
+                  </li>
+                  <li>
+                    Protocols Governing the Web, Types of Websites, Web
+                    Applications
+                  </li>
+                  <li>Web Projects, Web Architecture, HTML, URL, HTTP</li>
+                  <li>
+                    Issues in Web Development, Webserver, Web Browser, Internet
+                    Standards
+                  </li>
+                  <li>TCP/IP Protocol Suite, MIME, Cyber Laws</li>
+                </ul>
+              </li>
+              <li>
+                Understand the need for HTTP, URL and its Anatomy
+                <ul class="sub-topic">
+                  <li>
+                    HTTP Message Format, Persistent and Non-persistent
+                    Connections
+                  </li>
+                  <li>Web Caching, Proxy</li>
+                </ul>
+              </li>
+              <li>
+                HTML
+                <ul class="sub-topic">
+                  <li>Introduction to HTML, Markup Language, HTML Tags</li>
+                  <li>
+                    HTML Document Structure, HTML Comments, head, title, base,
+                    link, style
+                  </li>
+                  <li>
+                    meta, script, Heading Tags, paragraph, anchor, image, video,
+                    line breaks
+                  </li>
+                  <li>Text Formatting, Lists, Frames, Forms</li>
+                </ul>
+              </li>
+              <li>
+                CSS
+                <ul class="sub-topic">
+                  <li>
+                    Inline Styles, Internal Style Sheet, External Style Sheet
+                  </li>
+                  <li>
+                    Selectors, Colors, Backgrounds, Background Image, Background
+                    Attachment
+                  </li>
+                  <li>
+                    Background Shorthand, Borders, Margins, Padding, Fonts
+                  </li>
+                  <li>
+                    Links, Icons, Lists, Tables, Display, Position, Overflow,
+                    Float, Inline-block
+                  </li>
+                  <li>
+                    Horizontal & Vertical Align, Combinators, Pseudo-classes,
+                    Pseudo-elements
+                  </li>
+                  <li>Opacity / Transparency, Navigation Bar, Dropdowns</li>
+                  <li>Image Gallery, Attribute Selectors, Forms, Counters</li>
+                  <li>
+                    Website Layout, Units, Specificity, Text Effects,
+                    Animations, Tooltip
+                  </li>
+                  <li>Multiple Columns</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="module-title">
+            Module II [10 Hours]
+            <ul>
+              <li>
+                JavaScript
+                <ul class="sub-topic">
+                  <li>
+                    Scripting: JavaScript: Introduction, statements, comments,
+                    variables
+                  </li>
+                  <li>
+                    Operators, documents, forms, functions, objects, events
+                  </li>
+                  <li>
+                    Strings, Numbers, Arrays, Date, Math, Random, Loops, RegExp,
+                    errors
+                  </li>
+                  <li>this, Let, Const., classes, debugging</li>
+                </ul>
+              </li>
+              <li>
+                The HTML DOM (Document Object Model)
+                <ul class="sub-topic">
+                  <li>Introduction, DOM Methods, DOM Document</li>
+                  <li>DOM Elements, DOM HTML, DOM CSS, DOM Events</li>
+                  <li>DOM Navigation, DOM Nodes, DOM Nodelist</li>
+                </ul>
+              </li>
+              <li>
+                The Browser Object Model (BOM)
+                <ul class="sub-topic">
+                  <li>
+                    The Window Object, Window Size, Window History, Window
+                    Navigator
+                  </li>
+                  <li>Browser Detection, JavaScript Timing Events, Cookies</li>
+                  <li>Working on Cookies using JavaScript</li>
+                </ul>
+              </li>
+              <li>
+                Advanced JavaScript Concepts
+                <ul class="sub-topic">
+                  <li>
+                    Closures, Inheritance, Event Loops, Callback Functions
+                  </li>
+                  <li>Async/Await and Promises, Functional Programming</li>
+                  <li>Higher-Order Functions, Generators, Hoisting, IIFEs</li>
+                  <li>Memoization, Currying</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="module-title">
+            Module III [12 Hours]
+            <ul>
+              <li>
+                XML
+                <ul class="sub-topic">
+                  <li>Introduction to XML, XML vs HTML</li>
+                  <li>
+                    Structures of a XML Document, Document Type Declaration
+                    (DTD)
+                  </li>
+                  <li>
+                    XML Validation, Well-Formed XML Documents, Valid XML
+                    Document
+                  </li>
+                  <li>
+                    XML DOM, XSL, XSL Transformation, XML Namespaces, XML Schema
+                  </li>
+                </ul>
+              </li>
+              <li>
+                AJAX
+                <ul class="sub-topic">
+                  <li>AJAX Introduction, AJAX - The XMLHttpRequest Object</li>
+                  <li>AJAX - Server Response, AJAX XML, AJAX Database</li>
+                </ul>
+              </li>
+              <li>
+                jQuery
+                <ul class="sub-topic">
+                  <li>jQuery DOM Selectors, HTML Content, jQuery CSS Styles</li>
+                  <li>jQuery HTML DOM</li>
+                </ul>
+              </li>
+              <li>
+                JSON
+                <ul class="sub-topic">
+                  <li>Introduction, syntax, Data Types, Parsing, Stringify</li>
+                  <li>Object, Arrays</li>
+                </ul>
+              </li>
+              <li>
+                React.js
+                <ul class="sub-topic">
+                  <li>Introduction, ES6, Render HTML, JSX, Components</li>
+                  <li>Props, State, Lifecycle, Events, Forms, CSS</li>
+                </ul>
+              </li>
+              <li>
+                Node.js
+                <ul class="sub-topic">
+                  <li>
+                    Introduction to Node.js, Setup Development Environment
+                  </li>
+                  <li>Node.js Modules, Node Package Manager</li>
+                  <li>
+                    Creating Web Server, File System, Debugging Node.js
+                    Application
+                  </li>
+                  <li>
+                    Events, Express.js, Serving Static Resources, Database
+                    Connectivity
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="Assignments" class="tab-content">
+        <h3>Assignments</h3>
+        <p>Build a personal portfolio website.<br />Status: Not Started</p>
+      </div>
+      <div id="Materials" class="tab-content">
+        <h3>Course Materials</h3>
+        <p>
+          <a
+            href="https://classroom.google.com/c/NzAyMTUzMDQxNTE3/m/NzAyNjE0NzkwMjQw/details"
+            onclick="showModal('Lecture Notes')"
+            >Lecture Notes</a
+          >
+        </p>
+        <p>
+          <a href="#" onclick="showModal('Recommended Readings')"
+            >Recommended Readings</a
+          >
+
+        </p>
+      </div>
+      <div id="Quizzes" class="tab-content">
+        <h3>Quiz Questions</h3>
+        <ol>
+          <li>What does URL stand for?</li>
+          <li>Name three common web servers.</li>
+        </ol>
+      </div>
+
+      <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <h2 id="modal-title"></h2>
+          <p><ul>
+            <li>
+                <span class="book-title">Web Technology and Design</span> 
+                <span class="author">by C. Xavier</span>, New Age International.
+            </li>
+            <li>
+                <span class="book-title">HTML, DHTML, JavaScript, Perl & CGI</span> 
+                <span class="author">by Ivan Bayross</span>, BPB Publications.
+            </li>
+            <li>
+                <span class="book-title">Programming in JAVA</span> 
+                <span class="author">by E. Balagurusamy</span>, TMH.
+            </li>
+            <li>
+                <span class="book-title">Core JavaServer™ Faces</span> 
+                <span class="author">by David Geary, Cay S. Horstmann</span>, Third Edition, Prentice Hall.
+            </li>
+            <li>
+                <span class="book-title">Internet and Web Design</span> 
+                <span class="author">by Ramesh Bangia</span>, New Age International.
+            </li>
+            <li>
+                <span class="book-title">Introduction to Web Technology & Internet</span> 
+                <span class="author">by Patel and Barik</span>, Acme Learning.
+            </li>
+            <li>
+                <span class="book-title">The Web Warrior Guide to Web Design Technologies</span> 
+                <span class="author">by Don Goseselin, Ruth Guthrie, Luis A. Lopez et al.</span>, Cengage Learning.
+            </li>
+        </ul></p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2024 7th Sem IT Courses. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
